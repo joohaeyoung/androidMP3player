@@ -20,6 +20,7 @@ public class MusicService extends Service {
     private static final String TAG = "MusicService";
 
 
+
     @Override
     public void onCreate(){
 
@@ -44,13 +45,7 @@ public class MusicService extends Service {
         // 2. foregound service 설정 - startForeground() 메소드 호출, 위에서 생성한 nofication 객체 넘겨줌
         startForeground(123, noti);
 
-
-
-
         MediaPlayerClass.player.start();
-
-
-
 
         return START_REDELIVER_INTENT;
     }
@@ -84,7 +79,6 @@ public class MusicService extends Service {
 
     @Override
     public IBinder onBind(Intent intent) {
-
         return mBinder;
     }
     public void MusicPause(){
@@ -98,8 +92,12 @@ public class MusicService extends Service {
     }
     public void PrevPlay(){
 
+        player.start();
+
     }
     public void NextPlay(){
+
+        player.start();
 
     }
 
