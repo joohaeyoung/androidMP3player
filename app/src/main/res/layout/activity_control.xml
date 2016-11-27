@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:textSize="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#27ace6"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:id="@+id/prev"
+            android:padding="0dp"
+            android:onClick="prevClick"
+            android:src="@drawable/ic_skip_previous_black_24dp"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:id="@+id/playandpause"
+            android:padding="0dp"
+            android:onClick="playandpauseClick"
+            android:src="@drawable/ic_pause_black_24dp"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:id="@+id/next"
+            android:padding="0dp"
+            android:onClick="nextClick"
+            android:src="@drawable/ic_skip_next_black_24dp"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/close"
+        android:onClick="closeClick"
+        android:src="@drawable/ic_close_black_24dp"/>
+
+
+</LinearLayout>
